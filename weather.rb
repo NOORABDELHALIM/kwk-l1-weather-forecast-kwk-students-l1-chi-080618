@@ -27,8 +27,8 @@ puts weather_report(weather)
 # You'll want to use the each method to iterate over the hash and print out
 # `The city is New York.` `The description is Partly Cloudy.` `The temperature is 66.3.`
 def city_info(weather)
-   weather.each do |x,y|
-    puts "The #{x} is #{y}."
+   weather.each do |key,value|
+    puts "The #{key} is #{value}."
   end
 end
 city_info(weather)
